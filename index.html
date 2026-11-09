@@ -1,35 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0d1c2a" />
-  <meta name="description" content="TrustLens — find existing open-source AI solutions, compare their fit, and see what still needs security and compliance review." />
-  <title>TrustLens — Reuse AI with confidence</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="catalog.js" defer></script>
-  <script src="app.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Find and responsibly reuse existing supply chain and logistics AI tools.">
+  <title>TrustLens · Find AI worth reusing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
   <div class="app-shell">
-    <aside class="sidebar" aria-label="Main navigation">
-      <div class="brand"><div class="brand-mark"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m14 2 11 6v12l-11 6L3 20V8L14 2Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8 14 4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div><div><strong>trustlens<span>.</span></strong><small>AI SOLUTION INTELLIGENCE</small></div></div>
-      <div class="workspace-label">WORKSPACE</div>
-      <nav class="nav-list" id="navigation">
-        <button class="nav-item active" data-view="discover"><span class="nav-icon">⌕</span>Discover solutions <span class="nav-pill">45</span></button>
-        <button class="nav-item" data-view="compare"><span class="nav-icon">▤</span>Compare tools <span class="nav-count" id="compare-side-count">0</span></button>
-        <button class="nav-item" data-view="decision"><span class="nav-icon">◇</span>Build vs. reuse</button>
-        <button class="nav-item" data-view="review"><span class="nav-icon">▧</span>Review queue <span class="nav-count" id="review-side-count">3</span></button>
-      </nav>
-      <div class="sidebar-section"><div class="workspace-label">YOUR WORKSPACE</div><div class="workspace-card"><div class="workspace-icon">N</div><div><strong>Northstar Logistics</strong><small>Supply chain workspace</small></div><span class="tiny-chevron">⌄</span></div></div>
-      <div class="sidebar-bottom"><div class="trust-explainer"><span class="trust-explainer-icon">✳</span><strong>Trust is not a badge.</strong><p>Every claim needs evidence, scope, and a date.</p><button id="sidebar-methodology" class="text-link">How scoring works ↗</button></div><div class="user-row"><div class="avatar">TL</div><div><strong>Demo workspace</strong><small>Local · No account needed</small></div><span class="sidebar-settings">•••</span></div></div>
-    </aside>
+    <header class="sidebar">
+      <div class="header-inner">
+        <div class="brand" aria-label="TrustLens home"><span class="brand-mark" aria-hidden="true">✓</span><div><strong>TrustLens</strong><small>Find AI worth reusing</small></div></div>
+        <button id="mobile-menu" class="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-list" id="navigation" aria-label="Main navigation">
+          <button class="nav-item active" data-view="discover">Discover <span class="nav-pill">45</span></button>
+          <button class="nav-item" data-view="compare">Compare <span class="nav-count" id="compare-side-count">0</span></button>
+          <button class="nav-item" data-view="decision">Build vs. reuse</button>
+          <button class="nav-item" data-view="review">Review <span class="nav-count" id="review-side-count">3</span></button>
+        </nav>
+        <div class="header-tools"><span class="local-badge">Local demo</span><button id="sidebar-methodology" class="header-help">About trust</button></div>
+      </div>
+    </header>
     <div class="main-area">
-      <header class="topbar"><button id="mobile-menu" class="mobile-menu" aria-label="Toggle menu">☰</button><span class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb-active">Discover</strong></span><div class="topbar-actions"><span class="local-badge"><i></i> LOCAL DEMO</span><span class="topbar-divider"></span><button class="help-btn" id="methodology-top" title="Methodology" aria-label="Open methodology">?</button><div class="top-avatar">TL</div></div></header>
+      <div class="topbar"><span id="breadcrumb-active">Discover</span><button id="methodology-top" class="top-help">How trust works</button></div>
       <main id="main-content"></main>
     </div>
   </div>
   <div id="dialog-root"></div>
-  <div id="toast-root" aria-live="polite" class="toast-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
 </body>
 </html>
