@@ -4,6 +4,12 @@
 
 **Scope:** 45 curated, source-linked public GitHub projects across **11 supply-chain domains**, from forecasting to warehouse robotics. This is a static, locally running demonstration, not an AI audit platform.
 
+## Simple interface
+
+The demo opens directly to a searchable catalog. Select a supply-chain task using compact category filters, optionally narrow by tool type, local deployment or reported permissive license metadata, and inspect each project's trust dossier. Choose up to three projects to compare; the build-vs-reuse advisor, review checklist and export remain available from the top navigation.
+
+The UI is intentionally lightweight: a single top navigation, prominent search box, compact cards and clearly labeled evidence gaps. All 45 existing projects and 11 domains are retained. No scores should be interpreted as real security or compliance certifications.
+
 ## Run locally
 
 No API keys, npm, databases or online services are needed to run the UI.
